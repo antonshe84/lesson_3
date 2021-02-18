@@ -68,7 +68,7 @@ def thesaurus_adv(*args):
     return dict_name_sort
 
 
-print(help(thesaurus_adv))
+print(help(thesaurus_adv), '\n')
 print(thesaurus_adv("Иван Сергеев", "Инна Серова", "Петр Алексеев",
                     "Илья Иванов", "Анна Савельева", "Юрий Войтюк",
                     "Борис Аркадьев", "Антон Серов", "Павел Анисимов"))

@@ -14,11 +14,19 @@
 "два"
 """
 
-numb_dict = {   'one': 'один', 'two': 'два', 'three': 'три', 'four': 'четыре', 'five': 'пять',
-                'six': 'шесть', 'seven': 'семь', 'eight': 'восемь', 'nine': 'девять', 'ten': 'десять'
-}
+numb_dict = {'one': 'один', 'two': 'два', 'three': 'три', 'four': 'четыре', 'five': 'пять',
+             'six': 'шесть', 'seven': 'семь', 'eight': 'восемь', 'nine': 'девять', 'ten': 'десять'
+             }
+
 
 def num_translate_adv(numb_str):
+    """
+    Функция переводит с английского на русский числительные от одного до десяти с учетом регистра
+
+    :param numb_str: строка числительного на английском
+    :return: строка числительного на русском
+    """
+
     if numb_str.istitle():
         numb_ru = numb_dict.get(numb_str.lower())
         if numb_ru is None:
@@ -29,12 +37,10 @@ def num_translate_adv(numb_str):
         return numb_dict.get(numb_str)
 
 
+print(help(num_translate_adv), '\n')
 print(num_translate_adv('three'))
 print(num_translate_adv('eleven'))
 print(num_translate_adv('Eight'))
 print(num_translate_adv('Twelve'))
 print(num_translate_adv('Ten'))
 print(num_translate_adv('five'))
-
-
-

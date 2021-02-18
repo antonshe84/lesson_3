@@ -13,7 +13,6 @@ adjectives = ["веселый", "яркий", "зеленый", "утопичн�
 можно использовать только в одной шутке)? Сможете ли вы сделать аргументы именованными?
 """
 from random import randint
-from random import choice
 
 
 def get_jokes(n, repeat=False):
@@ -43,5 +42,5 @@ def get_jokes(n, repeat=False):
     return list_ha_ha
 
 
-print(help(get_jokes))
+print(help(get_jokes), '\n')
 print(get_jokes(repeat=True, n=8))
